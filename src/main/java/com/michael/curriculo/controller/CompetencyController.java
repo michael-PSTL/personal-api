@@ -1,0 +1,24 @@
+package com.michael.curriculo.controller;
+
+import com.michael.curriculo.model.Competency;
+import com.michael.curriculo.repository.CompetencyRepository;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class CompetencyController {
+
+    private final CompetencyRepository competencyRepository;
+
+    public CompetencyController(CompetencyRepository competencyRepository){
+        this.competencyRepository = competencyRepository;
+    }
+
+    @GetMapping("/competency")
+    public List<Competency> getCompetency(){
+        return competencyRepository.findByIsActiveTrue();
+    }
+
+}
