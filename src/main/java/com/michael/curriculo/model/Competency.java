@@ -39,7 +39,7 @@ public class Competency {
         return isActive;
     }
 
-    public void setIsActive(Boolean active) {
-        isActive = active;
+    public void setIsActive(Boolean IsActive) {
+        this.isActive = IsActive;
     }
 }
