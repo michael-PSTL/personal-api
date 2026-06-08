@@ -18,6 +18,6 @@ public class TechnologyController {
 
     @GetMapping("/technologies")
     public List<Technology> getTechnologies() {
-        return technologyRepository.findByIsActiveTrue();
+        return technologyRepository.findAll();
     }
 }

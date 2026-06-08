@@ -18,7 +18,7 @@ public class ProjectController {
 
     @GetMapping("/project")
     public List<Project> getProject(){
-        return projectRepository.findByIsActiveTrue();
+        return projectRepository.findAll();
     }
 
 }

@@ -18,7 +18,7 @@ public class CompetencyController {
 
     @GetMapping("/competency")
     public List<Competency> getCompetency(){
-        return competencyRepository.findByIsActiveTrue();
+        return competencyRepository.findAll();
     }
 
 }

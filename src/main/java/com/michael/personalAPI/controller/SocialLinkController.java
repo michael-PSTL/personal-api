@@ -18,6 +18,6 @@ public class SocialLinkController {
 
     @GetMapping("/sociallinks")
     public List<SocialLink> getSocialLinks(){
-        return socialLinkRepository.findByIsActiveTrue();
+        return socialLinkRepository.findAll();
     }
 }

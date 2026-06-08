@@ -7,6 +7,4 @@ import java.util.List;
 
 public interface ProjectRepository extends JpaRepository<Project,Integer> {
 
-    List<Project> findByIsActiveTrue();
-
 }

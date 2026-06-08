@@ -7,6 +7,4 @@ import java.util.List;
 
 public interface TechnologyRepository extends JpaRepository<Technology, Integer> {
 
-    List<Technology> findByIsActiveTrue();
-
 }

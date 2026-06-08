@@ -7,6 +7,4 @@ import java.util.List;
 
 public interface SocialLinkRepository extends JpaRepository<SocialLink,Integer> {
 
-    List<SocialLink> findByIsActiveTrue();
-
 }

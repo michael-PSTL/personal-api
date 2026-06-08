@@ -7,6 +7,4 @@ import java.util.List;
 
 public interface CompetencyRepository extends JpaRepository<Competency,Integer> {
 
-    List<Competency> findByIsActiveTrue();
-
 }
