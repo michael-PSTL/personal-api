@@ -21,7 +21,8 @@ public class StatusService {
     public StatusResponse getStatus() {
         return new StatusResponse(
                 githubService.contarRepositorios(),
-                developerExperience.getExperience()
+                developerExperience.getExperience(),
+                0
         );
     }
 }
