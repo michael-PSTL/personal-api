@@ -1,4 +1,4 @@
-package com.michael.personalAPI.controller;
+package com.michael.personalAPI.integration.github.controller;
 
 import com.michael.personalAPI.integration.github.GithubService;
 import com.michael.personalAPI.integration.github.dto.GitHubRepositoryResponse;

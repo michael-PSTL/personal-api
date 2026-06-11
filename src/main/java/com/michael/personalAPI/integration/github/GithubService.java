@@ -15,4 +15,8 @@ public class GithubService {
     public GitHubRepositoryResponse[] listarRepositorios() {
         return gitHubClient.getRepositories("michael-PSTL");
     }
+
+    public int contarRepositorios() {
+        return listarRepositorios().length;
+    }
 }

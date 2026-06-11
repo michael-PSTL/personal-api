@@ -1,8 +1,11 @@
-package com.michael.personalAPI.integration;
+package com.michael.personalAPI.integration.status;
+
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.Period;
 
+@Service
 public class DeveloperExperience {
 
     private static final LocalDate DEVELOPER_SINCE =
@@ -12,6 +15,6 @@ public class DeveloperExperience {
         Period period = Period.between(DEVELOPER_SINCE, LocalDate.now());
 
         return period.getYears() + " anos e " +
-               period.getMonths() + " meses";
+                period.getMonths() + " meses";
     }
 }
