@@ -20,8 +20,3 @@ Centralizar a regra de negócio e o armazenamento de dados em uma única API rob
 * **Total Reutilização:** Uma única base de dados MySQL servindo múltiplos frontends de forma independente.
 * **Fácil Escalabilidade:** Pronta para receber novas tabelas e rotas para novos projetos sem quebrar os sites existentes.
 * **Consistência:** Alterações feitas no banco refletem instantaneamente em todas as pontas conectadas.
-
----
-
-## 🔗 Link de Acesso
-* **API em Produção:** [Insira o link da sua API hospedada aqui]
